@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style__encriptado.css">
+</head>
+<body>
+    <header>
+        <!-- Logo en el encabezado -->
+        <img src="assets/Logo.png" alt="Logo de Alura" width="150">
+        <h1>CreepTo</h1>
+    </header>
+    <main>
+        <div class="input-container">
+            <!-- Cuadro de texto para ingresar texto -->
+            <textarea id="inputTexto" rows="10" placeholder="Ingrese el texto"></textarea>
+            <h2>Solo usa minúsculas y sin signos de puntuación</h2>
+            <!-- Botones de encriptar y desencriptar -->
+            <div class="button-container">
+                <button id="encriptarBtn">Encriptar</button>
+                <button id="desencriptarBtn">Desencriptar</button>
+            </div>
+        </div>
+        <!-- Contenedor para la imagen y el mensaje -->
+        <div class="result-container">
+            <img src="assets/Muñeco.png" alt="Muñeco de Alura" class="result-image">
+            <div class="message-container">
+                <p class="result-message">Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h2>Desarrollado por Marco Gomez ☺</h2>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

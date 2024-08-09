@@ -1,0 +1,150 @@
+/* Estilos generales */
+header {
+    text-align: left;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 60vh;
+    padding: 0 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones */
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2EC4B6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #009688;
+}
+
+/* Estilos para el contenedor del resultado */
+.result-container {
+    width: 400px;
+    height: 944px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.result-image {
+    width: 100%;
+    height: auto;
+}
+
+.message-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+
+.result-message {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Estilos para pantallas grandes (PC) */
+@media (min-width: 1025px) {
+    main {
+        min-height: 60vh;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    textarea {
+        width: 60%;
+    }
+}
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        min-height: 50vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    textarea {
+        width: 80%;
+    }
+
+    .result-container {
+        width: 250px;
+        height: auto;
+    }
+}
+
+/* Estilos para teléfonos */
+@media (max-width: 767px) {
+    main {
+        min-height: 40vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .result-container {
+        width: 200px;
+        height: auto;
+    }
+}
