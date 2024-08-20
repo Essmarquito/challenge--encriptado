@@ -4,7 +4,7 @@
 
 :root{
     --fuente-sankofa: 'Sankofa Display', sans-serif;
-    --fuente-josefin: 'Josefin sans', sans-serif;
+    --fuente-josefin: 'Josefin Sans', sans-serif;
     --color-primario: #107A8B;
     --color-secundario: #2CB978;
     --color-terciario: #EAEBED;
@@ -27,10 +27,11 @@ header {
     font-size: 3rem;
 }
 
-img {
-    max-width: 62.5%;
+img.logo1 {
+    max-width: 30%; /* Ajusta el tamaño para PC */
     height: auto;
     display: block;
+    margin: 0 auto;
 }
 
 main {
@@ -52,7 +53,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 45%; /* Ajusta la proporción de los contenedores */
 }
 
 textarea {
@@ -96,7 +97,7 @@ button:hover {
 
 /* Estilos para el contenedor del resultado */
 .result-container {
-    width: 400px;
+    width: 45%; /* Ajusta la proporción de los contenedores */
     height: 944px;
     border: 2px solid var(--color-terciario);
     border-radius: 10px;
@@ -109,7 +110,7 @@ button:hover {
 }
 
 .result-image {
-    width: 100%;
+    width: 10%;
     height: auto;
 }
 
@@ -129,15 +130,28 @@ button:hover {
 /* Estilos para pantallas grandes (PC) */
 @media (min-width: 1025px) {
     main {
-        min-height: 60vh;
+        flex-direction: row; /* Asegura que los elementos estén en fila */
+        align-items: flex-start;
     }
 
     h1 {
         font-size: 2.5rem;
     }
 
+    img.logo1 {
+        max-width: 15%; /* Tamaño más pequeño en pantallas grandes */
+    }
+
     textarea {
-        width: 60%;
+        width: 100%;
+    }
+
+    .input-container, .result-container {
+        width: 45%; /* Ajusta la proporción de los contenedores */
+    }
+
+    .result-container {
+        margin-left: 20px; /* Separa el contenedor del resultado del de entrada */
     }
 }
 
@@ -145,8 +159,8 @@ button:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
     main {
         min-height: 50vh;
-        flex-direction: column; /* Cambio para disposición vertical */
-        align-items: center; /* Centra los elementos */
+        flex-direction: column;
+        align-items: center;
     }
 
     h1 {
